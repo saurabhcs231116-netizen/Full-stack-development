@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basics Form</title>
+</head>
+<body>
+    <fieldset>
+        <legend align="center">Basic Form</legend>
+        <form >
+        <label for="fname">Full Name : </label>
+        <input id="fname" type="text" name="name"  placeholder="Enter Your Name"/>
+
+        <br>
+        <br>
+
+        <label for="email">Email : </label>
+        <input id="email" type="email" name="email" placeholder="Enter Your Email"/>
+
+        <br>
+        <br>
+
+        <label for="pass">password : </label>
+        <input id="pass" type="password" name="pass" placeholder="Enter Your password"/>
+
+        <br>
+        <br>
+
+        <label for="cpass">Confirm Password : </label>
+        <input id="cpass" type="password" name="cpass" placeholder="Confirm Your Password"/>
+
+        <br>
+        <br>
+
+        <label for="dob">DOB : </label>
+        <input id="dob" type="date" name="dob" />
+
+        <br>
+        <br>
+
+        <label for="Tob">DOB : </label>
+        <input id="Tob" type="time" name="Tob" />
+
+        <br>
+        <br>
+
+        <label for="jt">Joining Time : </label>
+        <input id="jt" type="datetime-local" name="jt" />
+
+        <br>
+        <br>
+
+         <label for="vol">volume : </label>
+        <input id="vol" type="range" name="vol"  min="0" max="1000" value="370"/>
+
+        <br>
+        <br>
+
+        <label for="mob">Enter Mobile : </label>
+        <input id="mob" name="mob" type="number" min="0" max="10000000000"/>
+
+        <br>
+        <br>
+        <label for="resume">Enter Resume: </label>
+        <input id="resume" name="resume" type="file" />
+
+        <br>
+        <br>
+
+        <label for="address">Enter Address : </label>
+        <textarea id="address" name="address"></textarea>
+
+        <br>
+        <br>
+
+        <label for="course">Course</label>
+        <select id="course"  name="course">
+            <option value="" >--Select Course--</option>
+            <option value="btech">B tech</option>
+            <option value="bba">BBA</option>
+            <option value="MBBS">MBBS</option>
+        </select>
+
+        <BUTTON>Submit</BUTTON>
+    </form>
+
+    </fieldset>
+</body>
+</html>
