@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Task 2</title>
+  </head>
+
+  <body>
+    <fieldset style="width: fit-content">
+      <h2>Pizza Order Form</h2>
+
+      <label for="firstname">First Name: </label>
+      <input
+        type="text"
+        name="firstname"
+        id="firstname"
+        placeholder="Enter First name"
+      />
+
+      <br /><br />
+
+      <label for="lastname">Last Name: </label>
+      <input
+        type="text"
+        name="lastname"
+        id="lastname"
+        placeholder="Enter Last name"
+      />
+
+      <br /><br />
+
+      <label for="email">Email Address: </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter Email Address"
+      />
+
+      <br /><br />
+
+      <label for="number">Contact Number: </label>
+      <input
+        type="number"
+        name="number"
+        id="number"
+        placeholder="Enter Contact Number"
+      />
+
+      <br /><br />
+
+      <label for="date">Preferred Delivery Date: </label>
+      <input type="date" name="date" id="date" />
+      <br /><br />
+
+      <label for="size">Size: </label>
+      <br />
+      <label for="size">
+        <input type="radio" name="size" value="small" />Small
+      </label>
+
+      <label for="size">
+        <input type="radio" name="size" value="medium" />Medium
+      </label>
+
+      <label for="size">
+        <input type="radio" name="size" value="large" />Large
+      </label>
+      <br /><br />
+
+      <label for="flavor"
+        >Flavor:
+        <br />
+
+        <input type="checkbox" name="flavor1" id="flavor" />Hawaian (Php:
+        150.00)
+        <label for="Quantity">
+          <select name="Quantity" id="Quantity">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </label>
+        <br />
+
+        <input type="checkbox" name="flavor2" id="flavor" />Peppeoni (Php
+        140.00)
+        <!-- <input type="number" name="Quantity" id="Quantity" min="1" max="10"> -->
+        <label for="Quantity">
+          <select name="Quantity" id="Quantity">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </label>
+        <br />
+
+        <input type="checkbox" name="flavor3" id="flavor" />Vegetable (Php
+        130.00)
+        <!-- <input type="number" name="Quantity" id="Quantity" min="1" max="10"> -->
+        <label for="Quantity">
+          <select name="Quantity" id="Quantity">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </label>
+        <br /><br />
+      </label>
+
+      <label for="creditcard">Credit Card Number: </label>
+      <input type="number" name="creditcard" id="creditcard" />
+      <br /><br />
+
+      <label for="pin">PIN: </label>
+      <input type="password" name="pin" id="pin" />
+      <br /><br />
+
+      <label for="note">Additional Note: <br /> </label>
+      <textarea
+        style="width: 200px"
+        name="note"
+        id="note"
+        rows="4"
+        cols="4"
+        maxlength="300"
+        placeholder=""
+      ></textarea>
+      <br /><br />
+
+      <button type="submit" style="padding: 10px"><b>Submit Order</b></button>
+    </fieldset>
+  </body>
+</html>
