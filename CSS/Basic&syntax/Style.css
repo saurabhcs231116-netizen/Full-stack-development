@@ -1,0 +1,13 @@
+*{
+    background-color: rgb(221, 169, 101);
+}
+
+input{
+    background-color: rgb(219, 161, 161);
+    color: rgb(87, 66, 42);
+    font-size:300%;
+}
+
+#appointmentdate{
+    size: 1000px;;
+}
