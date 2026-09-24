@@ -1,0 +1,36 @@
+.d {
+    background-color: aqua;
+    display: inline-block;
+    border: 2px solid black;
+    text-align: center;
+    width: 400px ;
+    height: 500px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+.b{
+    text-align: center;
+    background-color: brown;
+    color: aliceblue;
+}
+
+body{
+    background-color: antiquewhite;
+}
+.h{
+    text-align: center;
+    background-color: aqua;
+    color: rgb(3, 30, 54);
+    height: 150px;
+    font-size: 30px;
+    border: groove black 5px ;
+
+}
+.t{
+    padding-top: 100px;
+    text-align: center;
+    border: black solid 5px;
+    height: 1000px;
+}

@@ -1,13 +1,14 @@
 *{
-    background-color: rgb(221, 169, 101);
+    color: darksalmon;
+    background-color: rgb(197, 18, 122);
 }
+h2{
+    font-style: oblique;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-input{
-    background-color: rgb(219, 161, 161);
-    color: rgb(87, 66, 42);
-    font-size:300%;
+    font-size: xx-large;
 }
-
-#appointmentdate{
-    size: 1000px;;
+button{
+    color: black;
+    background-color: aqua;
 }

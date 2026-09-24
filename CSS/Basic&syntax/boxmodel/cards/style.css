@@ -1,0 +1,109 @@
+```css body {
+  font-family: Arial, sans-serif;
+  background-color: #ecb2b2;
+  margin: 0;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 450px;
+  height: 800px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px gray;
+  overflow: auto;
+  text-align: center;
+  border: gray 1px solid;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card h2 {
+  color: #333;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.card a,
+.page a {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.card a:hover,
+
+
+.page {
+  background-color: white;
+  width: 700px;
+  height: 400px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px gray;
+}
+
+.cardhtml {
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px gray;
+  overflow: auto;
+  text-align: center;
+  border: grey 1px groove;
+  text-align: center;
+}
+
+
+.page {
+    position: relative;
+}
+
+/* Back to Cards button */
+.page > a:first-of-type {
+    float: left;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Next Card button */
+.page > a:last-of-type {
+    float: right;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+

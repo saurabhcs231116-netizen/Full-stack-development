@@ -1,0 +1,56 @@
+.main{
+    background-color: aqua;
+}
+body{
+    background-color: pink;
+}
+#card{
+    background-color: red;
+    border: solid 5px chartreuse ;
+    border: 5px;
+}
+#crd{
+ background-color: red;
+    border: solid 5px rgb(54, 34, 56) ;
+    border: 5px;
+}
+
+#cliclbtn{
+    color:brown;
+    background-color: aqua;
+    border: 2px solid green;
+    box-shadow: 3px 3px 2px 2px grey;
+    width:30%;
+    height: 50%;
+
+    overflow: auto;
+
+}
+
+.card{
+    border: groove rgb(33, 118, 158) 5px;
+    width: 30%;
+    background-color: black;
+    color: aliceblue;
+}
+.main{
+    border:solid rgb(226, 34, 34) 2px ;
+}   
+
+#cliclbtn:hover{
+   background-color: rgb(52, 141, 192);
+   color: aliceblue;
+}
+#cliclbtn:active{
+    background-color: aliceblue;
+   color: rgb(40, 167, 199); 
+}
+
+card:hover{
+    background-color: rgb(73, 111, 133);
+   color: rgb(43, 99, 148); 
+}
+#tabcard{
+    border: solid 5px red;
+   
+}
