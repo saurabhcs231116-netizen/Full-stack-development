@@ -1,0 +1,50 @@
+#badabox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#badabox .box {
+    border: solid black 3px;
+    height: 200px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+#para1 img,
+#para2 img {
+    height: 200px;
+    width: 300px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #badabox {
+        justify-content: center;
+    }
+
+    #badabox .box {
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    #badabox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #badabox .box {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    #para1 img,
+    #para2 img {
+        width: 100%;
+        height: auto;
+    }
+}
