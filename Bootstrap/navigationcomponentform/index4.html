@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Web Development</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+
+    <!-- Course Card -->
+    <div class="container p-3 border border-3 border-dark rounded-3">
+
+      <div class="display-5 fw-bold">Web Development</div>
+
+      <div class="lead">
+        Learn HTML, CSS, and JavaScript
+      </div>
+
+      <br />
+
+      <div class="alert alert-success">
+        You have enrolled successfully.
+      </div>
+
+      <button class="btn btn-success">Active</button>
+
+      <br />
+      <br />
+
+      <!-- Progress -->
+      <div class="progress">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          style="width: 60%"
+          aria-valuenow="60"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          60%
+        </div>
+      </div>
+
+      <br />
+
+      <!-- Course List -->
+      <div class="list-group w-100">
+        <div class="list-group-item">HTML</div>
+        <div class="list-group-item">CSS</div>
+        <div class="list-group-item">JavaScript</div>
+      </div>
+
+      <br />
+
+      <button class="btn btn-primary btn-lg">
+        Continue Course
+      </button>
+
+    </div>
+
+    <br />
+
+    <!-- Password Section -->
+    <div class="container p-3 border border-3 border-dark rounded-3">
+
+      <span class=" card  ">
+         <h3>Saurabh patel</h3>
+       <h3>saurabhpatel1847@gmail.com</h3>
+       <h3>9329621374</h3>
+      </span>
+
+      <span class="d-inline-flex align-middle">
+        <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Change Password
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Change Password
+              </h5>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+
+              <div class="mb-3">
+                <label for="password" class="form-label">
+                  New Password
+                </label>
+
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="form-control"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="cpassword" class="form-label">
+                  Confirm Password
+                </label>
+
+                <input
+                  type="password"
+                  name="cpassword"
+                  id="cpassword"
+                  class="form-control"
+                />
+              </div>
+
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-primary"
+              >
+                Save Changes
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+      </span>
+
+
+      <div><button title="Delete this item">Delete</button>
+</div>
+      
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>

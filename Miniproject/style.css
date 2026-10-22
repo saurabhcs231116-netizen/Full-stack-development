@@ -1,6 +1,4 @@
-/* =========================================================
-   GLOBAL
-========================================================= */
+
 
 * {
     margin: 0;
@@ -8,16 +6,12 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 
 
 body {
     font-family: "Inter", sans-serif;
     color: #263238;
-    background: #fff;
+    background: white;
     line-height: 1.7;
     overflow-x: hidden;
 }
@@ -34,6 +28,7 @@ a {
 
 
 .container {
+    
     width: min(1180px, 92%);
     margin: auto;
 }
@@ -43,6 +38,7 @@ a {
 }
 
 .section-label {
+    
     color: #07858f;
     font-size: 13px;
     font-weight: 800;
@@ -52,12 +48,14 @@ a {
 }
 
 .section-heading {
+    
     text-align: center;
     max-width: 720px;
     margin: 0 auto 55px;
 }
 
 .section-heading h2 {
+    
     font-size: clamp(32px, 4vw, 48px);
     line-height: 1.15;
     margin-bottom: 18px;
@@ -70,8 +68,11 @@ a {
 
 
 
-
-
+#header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
 
 
 
@@ -135,14 +136,13 @@ a {
 .navbar {
     position:sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 10;
     background: rgba(255,255,255,.96);
-    backdrop-filter: blur(15px);
     box-shadow: 0 3px 20px rgba(0,0,0,.06);
 }
 
+
 .nav-container {
-    min-height: 80px;
     display: flex;
     align-items: center;
     gap: 50px;
@@ -165,6 +165,7 @@ a {
 
 .nav-menu li {
     position: relative;
+    list-style: none;
 }
 
 .nav-menu > li > a {
@@ -176,14 +177,9 @@ a {
     transition: .3s;
 }
 
-.nav-menu > li > a:hover,
-.nav-menu > li > a.active {
-    color: #07858f;
-}
 
-.navbar-scrolled {
-    box-shadow: 0 5px 24px rgba(0,0,0);
-}
+
+
 
 .dropdown-menu {
     position: absolute;
@@ -194,46 +190,37 @@ a {
     padding: 12px 0;
     border-radius: 10px;
     box-shadow: 0 15px 40px rgba(0,0,0);
-    list-style: none;
-    opacity: 0;
     visibility: hidden;
     transform: translateY(12px);
-    transition: .3s;
+  
 }
 
 .dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+  
 }
+
 
 .dropdown-menu a {
     display: block;
     padding: 10px 20px;
     font-size: 14px;
-    transition: .2s;
 }
 
-.dropdown-menu a:hover {
-    background: #eefbfc;
-    color: #087f8c;
-}
+
 
 .appointment-btn {
+     box-shadow: 0 15px 40px rgba(0,0,0);
     background: #07858f;
     color: white;
     padding: 12px 20px;
     border-radius: 7px;
     font-size: 13px;
     font-weight: 700;
-    transition: .3s;
     white-space: nowrap;
 }
 
-.appointment-btn:hover {
-    background: #056b73;
-    transform: translateY(-2px);
-}
 
 .mobile-menu-btn {
     display: none;
@@ -245,9 +232,7 @@ a {
 }
 
 
-/* =========================================================
-   HERO
-========================================================= */
+
 
 .hero {
     min-height: 720px;
@@ -259,16 +244,7 @@ a {
     align-items: center;
 }
 
-.hero-background {
-    position: absolute;
-    width: 550px;
-    height: 550px;
-    right: -150px;
-    top: -100px;
-    border-radius: 50%;
-    background: rgba(7,133,143,.08);
-    animation: heroOrb 7s ease-in-out infinite;
-}
+
 
 .hero-grid {
     display: grid;
@@ -277,17 +253,8 @@ a {
     gap: 70px;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
 
-.hero-badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 25px;
-}
+
 
 .hero-badges span {
     background: white;
@@ -296,7 +263,7 @@ a {
     font-size: 11px;
     font-weight: 700;
     color: #087f8c;
-    box-shadow: 0 5px 18px rgba(0,0,0,.05);
+   
 }
 
 .hero h1 {
@@ -356,8 +323,6 @@ a {
     border: 1px solid transparent;
     font-size: 14px;
     font-weight: 700;
-    cursor: pointer;
-    transition: .3s;
 }
 
 .btn-primary {
@@ -367,8 +332,8 @@ a {
 
 .btn-primary:hover {
     background: #056c74;
-    transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(7,133,143,.25);
+
+    box-shadow: 0 12px 25px rgba(7,133,143);
 }
 
 .btn-outline {
@@ -380,7 +345,7 @@ a {
 .btn-outline:hover {
     background: #07858f;
     color: white;
-    transform: translateY(-3px);
+
 }
 
 .hotline {
@@ -403,24 +368,15 @@ a {
     justify-content: center;
 }
 
-.hero-image-bg {
-    position: absolute;
-    width: 470px;
-    height: 470px;
-    border-radius: 50%;
-    background: #d8f0f1;
-    animation: pulseCircle 4s ease-in-out infinite;
-}
+
 
 .hero-image {
     position: relative;
     z-index: 1;
     width: 460px;
     max-height: 570px;
-    object-fit: cover;
-    object-position: center;
     border-radius: 230px 230px 20px 20px;
-    filter: drop-shadow(0 25px 35px rgba(0,0,0,.12));
+    filter: drop-shadow(0 25px 35px rgba(0,0,0));
 }
 
 .floating-card {
@@ -432,8 +388,8 @@ a {
     padding: 20px;
     width: 230px;
     border-radius: 14px;
-    box-shadow: 0 20px 50px rgba(0,0,0,.15);
-    animation: floating 4s ease-in-out infinite;
+    box-shadow: 0 20px 50px rgba(0,0,0);
+   
 }
 
 .floating-card > small {
@@ -467,9 +423,6 @@ a {
 }
 
 
-/* =========================================================
-   ABOUT
-========================================================= */
 
 .section-grid {
     display: grid;
@@ -487,6 +440,7 @@ a {
     height: 540px;
     object-fit: cover;
     border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0);
 }
 
 .emergency-card {
@@ -496,7 +450,7 @@ a {
     background: white;
     padding: 18px 22px;
     border-radius: 12px;
-    box-shadow: 0 15px 40px rgba(0,0,0,.12);
+    box-shadow: 0 15px 40px rgba(0,0,0);
     display: flex;
     gap: 14px;
     align-items: center;
@@ -522,6 +476,7 @@ a {
 .emergency-card span {
     font-size: 10px;
     color: #78868a;
+    box-shadow: 0 15px 40px rgba(0,0,0);
 }
 
 .about-content h2 {
@@ -564,49 +519,45 @@ a {
 }
 
 
-/* =========================================================
-   DEPARTMENTS
-========================================================= */
+
 
 .departments {
     background: #f6fbfc;
+    
 }
 
 .department-feature-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
+    
 }
 
 .department-card {
     background: white;
     border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 10px 35px rgba(0,0,0,.06);
-    transition: .4s;
+    box-shadow: 0 15px 40px rgba(0,0,0);
+  
 }
 
-.department-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 25px 55px rgba(0,0,0,.1);
-}
+
 
 .department-image {
     height: 260px;
     position: relative;
     overflow: hidden;
+
 }
 
 .department-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: .6s;
+
 }
 
-.department-card:hover img {
-    transform: scale(1.08);
-}
+
 
 .image-tag,
 .tag {
@@ -672,7 +623,7 @@ a {
     padding: 30px;
     border-radius: 16px;
     transition: .4s;
-    box-shadow: 0 7px 25px rgba(0,0,0,.04);
+   box-shadow: 0 15px 40px rgba(0,0,0);
 }
 
 .info-card:hover {
@@ -706,12 +657,22 @@ a {
     padding-left: 18px;
     color: #617277;
     font-size: 12px;
+    
 }
 
 
-/* =========================================================
-   SERVICES
-========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
 
 .services-grid {
     display: grid;
@@ -723,12 +684,10 @@ a {
     background: #f5fbfc;
     border-radius: 18px;
     overflow: hidden;
-    transition: .4s;
+    box-shadow: 0 15px 40px rgba(0,0,0);
 }
 
-.service-main:hover {
-    transform: translateY(-6px);
-}
+
 
 .service-image {
     height: 310px;
@@ -739,15 +698,13 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: .6s;
 }
 
-.service-main:hover img {
-    transform: scale(1.06);
-}
+
 
 .service-main-content {
     padding: 30px;
+   
 }
 
 .service-main-content h2 {
@@ -755,6 +712,7 @@ a {
     font-size: 29px;
     line-height: 1.2;
     margin: 14px 0;
+    
 }
 
 .service-main-content p {
@@ -763,6 +721,7 @@ a {
 }
 
 .service-list {
+    
     display: flex;
     flex-direction: column;
     gap: 18px;
@@ -783,6 +742,7 @@ a {
 }
 
 .service-icon {
+   
     flex: 0 0 50px;
     height: 50px;
     background: #e8f8f9;
@@ -805,6 +765,7 @@ a {
 }
 
 .service-features {
+    
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
@@ -837,11 +798,19 @@ a {
 }
 
 
-/* =========================================================
-   DOCTORS
-========================================================= */
+
+
+
+
+
+
+
+
+
+
 
 .doctors {
+    
     background: #f7fbfc;
 }
 
@@ -858,6 +827,7 @@ a {
 
 .doctor-search input,
 .doctor-search select {
+    
     border: 1px solid #dce8ea;
     padding: 13px 15px;
     border-radius: 7px;
@@ -888,27 +858,22 @@ a {
 }
 
 .doctor-grid {
+    
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 25px;
 }
 
 .doctor-card {
+    box-shadow: 0 15px 40px rgba(0,0,0);
     background: white;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 8px 30px rgba(0,0,0,.05);
-    transition: .4s;
+
 }
 
-.doctor-card[hidden] {
-    display: none;
-}
 
-.doctor-card:hover {
-    transform: translateY(-9px);
-    box-shadow: 0 25px 50px rgba(0,0,0,.12);
-}
+
 
 .doctor-image {
     height: 290px;
@@ -997,9 +962,19 @@ a {
 }
 
 
-/* =========================================================
-   EXCELLENCE
-========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .excellence {
     background: #07858f;
@@ -1009,6 +984,7 @@ a {
 }
 
 .excellence-grid {
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
@@ -1017,6 +993,7 @@ a {
 
 .excellence .section-label {
     color: #b7eff1;
+    
 }
 
 .excellence h2 {
@@ -1041,9 +1018,7 @@ a {
     color: #07858f;
 }
 
-.btn-white:hover {
-    transform: translateY(-3px);
-}
+
 
 .btn-transparent {
     border: 1px solid rgba(255,255,255,.6);
@@ -1060,26 +1035,39 @@ a {
 }
 
 .excellence-image img {
+    box-shadow: 0 15px 40px rgba(0,0,0);
     width: 100%;
     height: 450px;
-    object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 25px 50px rgba(0,0,0,.2);
-    transform: rotate(2deg);
+
+   
 }
 
 
-/* =========================================================
-   FEATURES
-========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .feature-grid {
+    
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 25px;
 }
 
 .feature-item {
+    box-shadow: 0 15px 40px rgba(0,0,0);
     text-align: center;
     padding: 35px;
     border: 1px solid #e7eeee;
@@ -1087,12 +1075,10 @@ a {
     transition: .4s;
 }
 
-.feature-item:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 20px 45px rgba(0,0,0,.07);
-}
+
 
 .feature-icon {
+    box-shadow: 0 5px 5px rgba(0,0,0);
     width: 65px;
     height: 65px;
     border-radius: 50%;
@@ -1107,6 +1093,7 @@ a {
 
 .feature-item h3 {
     color: #173d43;
+    
 }
 
 .feature-item p {
@@ -1116,9 +1103,23 @@ a {
 }
 
 
-/* =========================================================
-   PATIENT STORIES AND FAQ
-========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .testimonials {
     background: #f6fbfc;
@@ -1200,9 +1201,7 @@ a {
     list-style: none;
 }
 
-.faq-item summary::-webkit-details-marker {
-    display: none;
-}
+
 
 .faq-item summary::after {
     content: "+";
@@ -1224,12 +1223,26 @@ a {
 }
 
 
-/* =========================================================
-   APPOINTMENT
-========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .appointment {
     background: #f6fbfc;
+    
 }
 
 .appointment-form {
@@ -1238,7 +1251,7 @@ a {
     background: white;
     padding: 35px;
     border-radius: 18px;
-    box-shadow: 0 15px 45px rgba(0,0,0,.07);
+    box-shadow: 0 15px 40px rgba(0,0,0);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 22px;
@@ -1279,6 +1292,12 @@ a {
 
 .appointment-form button {
     justify-self: start;
+    box-shadow: 0 15px 40px rgba(0,0,0);
+}
+
+.appointment-form button:hover{
+    background-color: white;
+    color: #056c74;
 }
 
 .appointment-status {
@@ -1293,11 +1312,28 @@ a {
 }
 
 
-/* =========================================================
-   EMERGENCY
-========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .emergency-section {
+    
     background: #073c43;
     color: white;
     padding: 65px 0;
@@ -1361,9 +1397,24 @@ a {
 }
 
 
-/* =========================================================
-   FOOTER
-========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     background: #082e34;
@@ -1400,12 +1451,12 @@ footer {
     color: #a9c0c3;
     font-size: 12px;
     margin: 5px 0;
-    transition: .2s;
+    
 }
 
 .footer-grid > div:not(.footer-brand) a:hover {
     color: white;
-    transform: translateX(4px);
+    
 }
 
 .footer-bottom {
@@ -1431,379 +1482,15 @@ footer {
 }
 
 
-/* =========================================================
-   SCROLL ANIMATIONS
-========================================================= */
 
-.reveal {
-    opacity: 0;
-    transform: translateY(50px);
-    transition:
-        opacity .8s ease,
-        transform .8s ease;
-}
 
-.reveal-left {
-    opacity: 0;
-    transform: translateX(-70px);
-    transition:
-        opacity .9s ease,
-        transform .9s ease;
-}
 
-.reveal-right {
-    opacity: 0;
-    transform: translateX(70px);
-    transition:
-        opacity .9s ease,
-        transform .9s ease;
-}
 
-.reveal-scale {
-    opacity: 0;
-    transform: scale(.85);
-    transition:
-        opacity .8s ease,
-        transform .8s ease;
-}
 
-.reveal.show,
-.reveal-left.show,
-.reveal-right.show,
-.reveal-scale.show {
-    opacity: 1;
-    transform: translate(0) scale(1);
-}
 
-:focus-visible {
-    outline: 3px solid #f2a900;
-    outline-offset: 3px;
-}
 
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
 
-    *,
-    *::before,
-    *::after {
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition-duration: .01ms !important;
-    }
-}
 
-
-/* =========================================================
-   KEYFRAME ANIMATIONS
-========================================================= */
-
-@keyframes floating {
-
-    0%,100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-12px);
-    }
-
-}
-
-@keyframes pulseCircle {
-
-    0%,100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-    }
-
-}
-
-@keyframes heroOrb {
-
-    0%,100% {
-        transform: translate(0,0);
-    }
-
-    50% {
-        transform: translate(-50px,40px);
-    }
-
-}
-
-
-/* =========================================================
-   HIDDEN SEARCH RESULTS
-========================================================= */
-
-.doctor-card.hidden {
-    display: none;
-}
-
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
-
-@media (max-width: 1050px) {
-
-    .nav-menu {
-        gap: 14px;
-    }
-
-    .nav-menu > li > a {
-        font-size: 12px;
-    }
-
-    .appointment-btn {
-        padding: 10px 13px;
-        font-size: 11px;
-    }
-
-    .hero-grid {
-        gap: 30px;
-    }
-
-}
-
-
-@media (max-width: 900px) {
-
-    .mobile-menu-btn {
-        display: block;
-        margin-left: auto;
-    }
-
-    .appointment-btn {
-        display: none;
-    }
-
-    .nav-menu {
-        position: absolute;
-        left: 4%;
-        right: 4%;
-        top: 75px;
-        background: white;
-        display: none;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: 0 20px 40px rgba(0,0,0,.12);
-    }
-
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .nav-menu > li > a {
-        padding: 12px 15px;
-    }
-
-    .dropdown-menu {
-        position: static;
-        width: 100%;
-        display: none;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        box-shadow: none;
-        padding: 0;
-    }
-
-    .dropdown:hover .dropdown-menu {
-        display: block;
-    }
-
-    .dropdown.open .dropdown-menu {
-        display: block;
-    }
-
-    .hero-grid,
-    .section-grid,
-    .excellence-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero {
-        padding: 80px 0;
-    }
-
-    .hero-image-wrapper {
-        min-height: 500px;
-    }
-
-    .department-feature-grid,
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .department-small-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .doctor-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-}
-
-
-@media (max-width: 650px) {
-
-    .section {
-        padding: 70px 0;
-    }
-
-    .topbar-content {
-        flex-direction: column;
-        gap: 4px;
-        padding: 7px 0;
-    }
-
-    .hero h1 {
-        font-size: 42px;
-    }
-
-    .hero-stats {
-        gap: 20px;
-    }
-
-    .hero-stats strong {
-        font-size: 23px;
-    }
-
-    .hero-image {
-        width: 330px;
-    }
-
-    .hero-image-bg {
-        width: 340px;
-        height: 340px;
-    }
-
-    .floating-card {
-        right: 0;
-        bottom: 40px;
-    }
-
-    .about-image > img {
-        height: 400px;
-    }
-
-    .emergency-card {
-        right: 5px;
-        left: 5px;
-    }
-
-    .about-numbers {
-        gap: 20px;
-    }
-
-    .department-small-grid,
-    .doctor-grid,
-    .feature-grid,
-    .service-features {
-        grid-template-columns: 1fr;
-    }
-
-    .testimonial-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .testimonial-card blockquote {
-        min-height: 0;
-    }
-
-    .doctor-search {
-        grid-template-columns: 1fr;
-    }
-
-    .doctor-search button {
-        padding: 13px;
-    }
-
-    .appointment-form {
-        grid-template-columns: 1fr;
-        padding: 22px;
-    }
-
-    .form-group:nth-child(6),
-    .appointment-form button {
-        grid-column: auto;
-    }
-
-    .emergency-inner {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .emergency-actions {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .footer-brand {
-        grid-column: 1 / -1;
-    }
-
-    .footer-bottom-inner {
-        flex-direction: column;
-        gap: 10px;
-        padding: 20px 0;
-        text-align: center;
-    }
-
-}
-
-
-@media (max-width: 430px) {
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .hero-buttons .btn {
-        width: 100%;
-    }
-
-    .hero-image {
-        width: 280px;
-    }
-
-    .hero-image-bg {
-        width: 290px;
-        height: 290px;
-    }
-
-    .floating-card {
-        width: 200px;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-brand {
-        grid-column: auto;
-    }
-
-}
 
 .login-btn {
     background: #07858f;
@@ -1812,7 +1499,16 @@ footer {
     border-radius: 7px;
     font-size: 13px;
     font-weight: 700;
-    transition: .3s;
     white-space: nowrap;
     width: 100%;
 }
+
+.login-btn:hover{
+    background-color: white;
+    color: #056c74;
+}
+
+
+
+
+
