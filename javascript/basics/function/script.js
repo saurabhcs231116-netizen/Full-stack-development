@@ -1,13 +1,13 @@
 
 
-let f =10;
-function sum(a,b){
-    let c=a+b;
-    console.log(c);
-    console.log(f);
+
+
+
+const arr1 =["a","b","c","d","e"];
+
+for(var i=0; i<arr1.length; i++){
+
+    console.log(arr1[-3]);
 }
-
-sum(5,10);
-
 
 

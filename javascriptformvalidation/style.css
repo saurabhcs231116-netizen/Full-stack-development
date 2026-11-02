@@ -1,0 +1,20 @@
+.nav-btn{
+background: #2a57e9;
+color: aliceblue;
+border-radius: 10px;
+margin:2px;
+padding: 5px;
+}
+
+.nav-btn:hover{
+background: #2ae9c9;
+color: aliceblue;
+border-radius: 10px;
+margin:2px;
+padding: 5px; 
+}
+
+a {
+    color: black !important;
+}
+
